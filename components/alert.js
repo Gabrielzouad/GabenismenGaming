@@ -2,10 +2,10 @@ import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
 
 const navigation = [
-  { name: "Home", href: "#", current: false },
-  { name: "Players", href: "#", current: false },
+  { name: "Hjem", href: "#", current: false },
+  { name: "Spillere", href: "#", current: false },
   { name: "Blog", href: "#", current: false },
-  { name: "Matches", href: "#", current: false },
+  { name: "Kamper", href: "#", current: false },
   { name: "Produkter", href: "#", current: false },
 ]
 
