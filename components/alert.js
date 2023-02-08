@@ -55,8 +55,7 @@ export default function Alert() {
                 <div className='flex-shrink-0'>
                   <button
                     type='button'
-                    className='relative inline-flex items-center rounded-md border border-transparent bg-[#DD4D4A] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800'>
-                    <PlusIcon className='-ml-1 mr-2 h-5 w-5' aria-hidden='true' />
+                    className='relative inline-flex items-center rounded-md border border-transparent bg-[#DD4D4A] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#DD4D5A] focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-gray-800'>
                     <span>Kontakt oss!</span>
                   </button>
                 </div>
@@ -78,14 +77,6 @@ export default function Alert() {
               ))}
             </div>
             <div className='border-t border-gray-700 pt-4 pb-3'>
-              <div className='flex items-center px-5 sm:px-6'>
-                <button
-                  type='button'
-                  className='ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
-                  <span className='sr-only'>View notifications</span>
-                  <BellIcon className='h-6 w-6' aria-hidden='true' />
-                </button>
-              </div>
               <div className='mt-3 space-y-1 px-2 sm:px-3'>
                 {userNavigation.map((item) => (
                   <Disclosure.Button key={item.name} as='a' href={item.href} className='block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white'>
