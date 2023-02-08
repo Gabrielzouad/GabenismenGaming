@@ -1,17 +1,12 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
-import { PlusIcon } from "@heroicons/react/20/solid"
 
 const navigation = [
   { name: "Home", href: "#", current: false },
   { name: "Players", href: "#", current: false },
   { name: "Blog", href: "#", current: false },
   { name: "Matches", href: "#", current: false },
-]
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
+  { name: "Produkter", href: "#", current: false },
 ]
 
 function classNames(...classes) {
@@ -75,15 +70,6 @@ export default function Alert() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-            </div>
-            <div className='border-t border-gray-700 pt-4 pb-3'>
-              <div className='mt-3 space-y-1 px-2 sm:px-3'>
-                {userNavigation.map((item) => (
-                  <Disclosure.Button key={item.name} as='a' href={item.href} className='block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white'>
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
-              </div>
             </div>
           </Disclosure.Panel>
         </>
