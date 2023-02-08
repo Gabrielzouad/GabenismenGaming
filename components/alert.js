@@ -58,15 +58,7 @@ export default function Alert() {
                     type='button'
                     className='relative inline-flex items-center rounded-md border border-transparent bg-[#DD4D4A] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800'>
                     <PlusIcon className='-ml-1 mr-2 h-5 w-5' aria-hidden='true' />
-                    <span>Apply for tryout</span>
-                  </button>
-                </div>
-                <div className='hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center'>
-                  <button
-                    type='button'
-                    className='rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
-                    <span className='sr-only'>View notifications</span>
-                    <BellIcon className='h-6 w-6' aria-hidden='true' />
+                    <span>Kontakt oss!</span>
                   </button>
                 </div>
               </div>
