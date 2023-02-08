@@ -1,5 +1,6 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline"
+import { useTheme } from "next-themes"
 
 const navigation = [
   { name: "Hjem", href: "#", current: false },
@@ -14,6 +15,7 @@ function classNames(...classes) {
 }
 
 export default function Alert() {
+  const { theme, setTheme } = useTheme()
   return (
     <Disclosure as='nav' className='bg-gray-800'>
       {({ open }) => (
@@ -49,9 +51,10 @@ export default function Alert() {
               <div className='flex items-center'>
                 <div className='flex-shrink-0'>
                   <button
+                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                     type='button'
                     className='relative inline-flex items-center rounded-md border border-transparent bg-[#DD4D4A] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#DD4D5A] focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-gray-800'>
-                    <span>Kontakt oss!</span>
+                    <span>Dark mode</span>
                   </button>
                 </div>
               </div>
