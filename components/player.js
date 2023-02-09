@@ -23,14 +23,14 @@ const people = [
   {
     name: "Emil Bekkelien",
     role: "Co-Founder og Head of Operations",
-    imageUrl: "/emilbekkelien.jpg",
+    imageUrl: "/emilbekkelien.png",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "Kristian Megaard",
     role: "Transport og Logistikk",
-    imageUrl: "/megaard.jpg",
+    imageUrl: "/megaard.png",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
