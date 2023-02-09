@@ -22,7 +22,7 @@ const people = [
   },
   {
     name: "Emil Bekkelien",
-    role: "Co-Founder Handicapforeningen",
+    role: "Co-Founder og Head of Operations",
     imageUrl: "/emilbekkelien.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
@@ -37,7 +37,7 @@ const people = [
   {
     name: "Martin Hoff",
     role: "CO-founder, Redaktør og medieansvarlig",
-    imageUrl: "/martinhoff.jpg",
+    imageUrl: "/hoff.png",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
