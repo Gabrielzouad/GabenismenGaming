@@ -3,8 +3,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useTheme } from "next-themes"
 
 const navigation = [
-  { name: "Hjem", href: "#", current: false },
-  { name: "Spillere", href: "#", current: false },
+  { name: "Hjem", href: "/", current: false },
+  { name: "Spillere", href: "/spillere", current: false },
   { name: "Blog", href: "#", current: false },
   { name: "Kamper", href: "#", current: false },
   { name: "Produkter", href: "#", current: false },
