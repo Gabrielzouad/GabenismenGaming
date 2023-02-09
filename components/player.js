@@ -20,6 +20,34 @@ const people = [
     twitterUrl: "#",
     linkedinUrl: "#",
   },
+  {
+    name: "Emil Bekkelien",
+    role: "Co-Founder Handicapforeningen",
+    imageUrl: "/emilbekkelien.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Kristian Megaard",
+    role: "Transport og Logistikk",
+    imageUrl: "/megaard.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Martin Hoff",
+    role: "CO-founder, Redaktør og medieansvarlig",
+    imageUrl: "/martinhoff.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Marius Rudberg",
+    role: "Økonomi ansvarlig",
+    imageUrl: "https://media.licdn.com/dms/image/D4D03AQHnS5u3QxnBog/profile-displayphoto-shrink_800_800/0/1666956133065?e=1681344000&v=beta&t=zdV1DIkKAVLFqCmoLc64ibKxTYaAE53g-G-eIy1plpk",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
 ]
 
 export default function Players() {
