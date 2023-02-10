@@ -48,6 +48,13 @@ const people = [
     twitterUrl: "#",
     linkedinUrl: "#",
   },
+  {
+    name: "Joshua Ngyuen",
+    role: "CEO Susboys",
+    imageUrl: "/joshua.png",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
 ]
 
 export default function Players() {
