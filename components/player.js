@@ -37,7 +37,7 @@ const people = [
   {
     name: "Martin Hoff",
     role: "CO-founder, Redaktør og medieansvarlig",
-    imageUrl: "/hoff.png",
+    imageUrl: "/hoff.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
