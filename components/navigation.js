@@ -5,7 +5,7 @@ import { useTheme } from "next-themes"
 const navigation = [
   { name: "Hjem", href: "/", current: false },
   { name: "Spillere", href: "/spillere", current: false },
-  { name: "Blog", href: "#", current: false },
+  { name: "Blog", href: "/blog", current: false },
   { name: "Kamper", href: "#", current: false },
   { name: "Produkter", href: "#", current: false },
 ]

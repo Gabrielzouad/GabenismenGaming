@@ -64,7 +64,7 @@ export default function Players() {
         <div className='mx-auto max-w-7xl px-6 text-center lg:px-8'>
           <div className='mx-auto max-w-2xl'>
             <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>Våre Spillere</h2>
-            <p className='mt-4 text-lg leading-8 text-gray-400'>Vi er en gruppe individer som har et stort lager med Cyclon B</p>
+            <p className='mt-4 text-lg leading-8 text-gray-400'>Venner og familie står sterkest sammen</p>
           </div>
           <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8'>
             {people.map((person) => (
