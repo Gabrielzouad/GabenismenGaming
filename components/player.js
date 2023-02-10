@@ -14,7 +14,7 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Håvard Andreasen",
+    name: "Håvard Andreassen",
     role: "Head of Marketing",
     imageUrl: "https://media.licdn.com/dms/image/C4E03AQHF0SLYz2wRfw/profile-displayphoto-shrink_400_400/0/1652020947573?e=1681344000&v=beta&t=SCG0HB1Kca7WdzYa-pNLzMGS7PxvSi83hw4HEJxVfh4",
     twitterUrl: "#",
@@ -49,7 +49,7 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Joshua Ngyuen",
+    name: "Joshua Nguyen",
     role: "CEO Susboys",
     imageUrl: "/joshua.png",
     twitterUrl: "#",
