@@ -1,6 +1,6 @@
 import Head from "next/head"
 import MatchesIntro from "../components/matchesIntro"
-import MatchInfo from "../components/matchInfo"
+import MatchInfo from "../components/matchinfo"
 
 export default function Matches() {
   return (
