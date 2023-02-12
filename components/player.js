@@ -55,6 +55,13 @@ const people = [
     twitterUrl: "#",
     linkedinUrl: "#",
   },
+  {
+    name: "André Dantoni",
+    role: "Mann av natur",
+    imageUrl: "/andre.jpg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
 ]
 
 export default function Players() {
