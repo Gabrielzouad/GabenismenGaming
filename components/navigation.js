@@ -7,7 +7,6 @@ const navigation = [
   { name: "Spillere", href: "/spillere", current: false },
   { name: "Blog", href: "/blog", current: false },
   { name: "Kamper", href: "/matches", current: false },
-  { name: "Produkter", href: "#", current: false },
 ]
 
 function classNames(...classes) {
@@ -51,10 +50,11 @@ export default function Navigation() {
               <div className='flex items-center'>
                 <div className='flex-shrink-0'>
                   <button
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                     type='button'
                     className='relative inline-flex items-center rounded-md border border-transparent bg-[#DD4D4A] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#DD4D5A] focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-gray-800'>
-                    <span>Dark mode</span>
+                    <span>
+                      <a href='https://www.twitch.tv/skreppwin'>SE OSS LIVE</a>
+                    </span>
                   </button>
                 </div>
               </div>
