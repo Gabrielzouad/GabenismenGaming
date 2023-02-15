@@ -17,7 +17,7 @@ export default function MatchInfo() {
             {games.map((games) => {
               if (games.finished_at !== null && (games.home_signup.name === "Gabenismen Gaming" || games.away_signup.name === "Gabenismen Gaming")) {
                 return (
-                  <div className='container '>
+                  <div className='container text-white'>
                     <div className='row'>
                       <div className='card bg-gray-800'>
                         <div className='card-body'>
@@ -44,7 +44,7 @@ export default function MatchInfo() {
             {games.map((games) => {
               if (games.finished_at === null && (games.home_signup.name === "Gabenismen Gaming" || games.away_signup.name === "Gabenismen Gaming")) {
                 return (
-                  <div className='container '>
+                  <div className='container text-white'>
                     <div className='row'>
                       <div className='card bg-gray-800'>
                         <div className='card-body'>
