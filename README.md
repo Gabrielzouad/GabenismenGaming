@@ -2,9 +2,9 @@
 
 This is a blogspot for the Gabenismen Esport team. 
 
-## Demo
+## Live site 
 
-### [Gabenismen.no)
+### Gabenismen.no
 
 ## How its built
 
