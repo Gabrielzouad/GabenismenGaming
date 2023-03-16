@@ -107,7 +107,7 @@ CONTENTFUL_PREVIEW_SECRET=...
 CONTENTFUL_REVALIDATE_SECRET=...
 ```
 
-### Step 6. Run Next.js in development mode
+### Step 4. Run Next.js in development mode
 
 ```bash
 npm run dev
@@ -117,7 +117,7 @@ Your blog should be up and running!
 
 
 
-### Step 8. Deploy on Vercel
+### Step 5. Deploy on Vercel
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
