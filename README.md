@@ -4,7 +4,7 @@ This is a blogspot for the Gabenismen Esport team.
 
 ## Live site 
 
-### Gabenismen.no
+### [Gabenismen.no](https://www.gabenismen.no/)
 
 ## How its built
 
