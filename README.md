@@ -8,7 +8,7 @@ This is a blogspot for the Gabenismen Esport team.
 
 ## How its built
 
-This is a static blogspot is built with Next.js and contentful integration. The contentful CMS is connected to vercel hosting and is using a Webhook to republish when a new post is uploaded.
+This is a static blogspot built with Next.js and contentful integration. The contentful CMS is connected to vercel hosting and is using a Webhook to republish when a new post is uploaded.
 
 
 ## How to use
