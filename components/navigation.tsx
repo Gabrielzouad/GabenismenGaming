@@ -1,6 +1,8 @@
+'use client';
+
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useTheme } from 'next-themes';
+import React from 'react';
 
 const navigation = [
   { name: 'Hjem', href: '/', current: false },

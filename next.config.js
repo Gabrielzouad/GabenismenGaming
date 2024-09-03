@@ -1,6 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   images: {
-    loader: 'custom',
+    domains: ['images.ctfassets.net'], // Add your image domains here
   },
-}
+};
+
+module.exports = nextConfig;

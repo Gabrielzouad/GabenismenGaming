@@ -1,21 +1,21 @@
+import React from 'react';
 import Container from '../components/container';
 import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
-import Layout from '../components/layout';
 import { getAllPostsForHome } from '../lib/api';
-import Head from 'next/head';
+import Intro from '../components/Intro';
 
-export default function Index({ preview, allPosts }) {
+export default async function HomePage() {
+  // Fetch data server-side directly in the component
+  const preview = false; // Set this according to your logic
+  const allPosts = (await getAllPostsForHome(preview)) ?? [];
+
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
+
   return (
     <>
-      <Layout preview={preview}>
-        <Head>
-          <title>GabenismenTV</title>
-        </Head>
-
+      <div className='min-h-screen'>
         <Container>
           <Intro />
           {heroPost && (
@@ -30,14 +30,7 @@ export default function Index({ preview, allPosts }) {
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-      </Layout>
+      </div>
     </>
   );
-}
-
-export async function getStaticProps({ preview = false }) {
-  const allPosts = (await getAllPostsForHome(preview)) ?? [];
-  return {
-    props: { preview, allPosts },
-  };
 }
