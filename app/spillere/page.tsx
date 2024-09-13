@@ -57,7 +57,7 @@ const team: Team = {
 
 export default async function spillere() {
   return (
-    <section className='h-screen mb-20'>
+    <section className='h-full mb-20'>
       <header className='bg-gradient-to-r from-red-700 to-violet-600 py-20 '>
         <div className='container mx-auto px-4 text-white'>
           <h1 className='text-4xl font-bold mb-4'>{team.name}</h1>

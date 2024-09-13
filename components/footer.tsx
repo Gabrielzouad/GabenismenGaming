@@ -2,9 +2,9 @@ import Container from './container';
 
 export default function Footer() {
   return (
-    <footer className='bg-accent-1 border-t border-accent-2 '>
+    <footer className='bg-accent-1 border-t border-accent-2 bottom-0 '>
       <Container>
-        <div className='py-20 flex flex-col lg:flex-row items-center'>
+        <div className='py-20 flex flex-col lg:flex-row items-center b-0'>
           <h3 className='text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2 dark:text-black'>
             Gabenismen Gaming AS
           </h3>
