@@ -5,7 +5,8 @@ import { Badge } from '../../components/ui/badge';
 
 type Team = {
   name: string;
-  players: Player[];
+  league: Player[];
+  fifa: Player[];
   achievements: string[];
 };
 
@@ -16,7 +17,7 @@ const team: Team = {
     'Team of the Year 2020',
     'Pro Clubs Playoff Winner 2021',
   ],
-  players: [
+  league: [
     {
       name: 'Jørgen Braastad',
       ign: 'Jørgen Braastad',
@@ -53,6 +54,15 @@ const team: Team = {
       socialMedia: { twitter: '#', twitch: '#', instagram: '#' },
     },
   ],
+  fifa: [
+    {
+      name: 'Peder Gintal',
+      ign: 'Martin Jødegaard',
+      role: 'Høyre ving',
+      avatar: '/rotatingpedersakte.gif',
+      socialMedia: { twitter: '#', twitch: '#', instagram: '#' },
+    },
+  ],
 };
 
 export default async function spillere() {
@@ -84,15 +94,15 @@ export default async function spillere() {
             Leauge of Legends
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6'>
-            {team.players.map((player) => (
+            {team.league.map((player) => (
               <PlayerCard key={player.name} player={player} />
             ))}
           </div>
         </section>
         <section className='mb-16'>
-          <h2 className='text-3xl font-bold mb-8 text-white'>FC24 Pro Clubs</h2>
+          <h2 className='text-3xl font-bold mb-8 text-white'>FC25 Pro Clubs</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6'>
-            {team.players.map((player) => (
+            {team.fifa.map((player) => (
               <PlayerCard key={player.name} player={player} />
             ))}
           </div>
