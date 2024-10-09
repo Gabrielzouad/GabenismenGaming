@@ -58,7 +58,7 @@ const team: Team = {
     {
       name: 'Peder Gintal',
       ign: 'Martin Jødegaard',
-      role: 'Høyre ving',
+      role: 'IGL',
       avatar: '/rotatingpedersakte.gif',
       socialMedia: { twitter: '#', twitch: '#', instagram: '#' },
     },
@@ -100,7 +100,7 @@ export default async function spillere() {
           </div>
         </section>
         <section className='mb-16'>
-          <h2 className='text-3xl font-bold mb-8 text-white'>FC25 Pro Clubs</h2>
+          <h2 className='text-3xl font-bold mb-8 text-white'>Fortnite</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6'>
             {team.fifa.map((player) => (
               <PlayerCard key={player.name} player={player} />
