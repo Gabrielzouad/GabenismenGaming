@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Hjem', href: '/', current: false },
   { name: 'Spillere', href: '/spillere', current: false },
   { name: 'Blog', href: '/blog', current: false },
-  { name: 'Kamper', href: '/matches', current: false },
 ];
 
 function classNames(...classes) {
