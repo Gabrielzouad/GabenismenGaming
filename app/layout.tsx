@@ -3,6 +3,7 @@ import '../styles/index.css';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Esports Gaming News, Reviews, and More | Gabenismen Gaming',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
