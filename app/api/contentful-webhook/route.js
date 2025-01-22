@@ -36,7 +36,7 @@ export async function POST(req) {
     }
 
     // Construct the blog URL using the slug
-    const blogUrl = `https://gabenismen.no/${slug}`;
+    const blogUrl = `https://gabenismen.no/posts/${slug}`;
 
     // Fetch the cover image URL from Contentful
     const coverImageUrl = await getCoverImageUrl(coverImage); // This function fetches the image URL based on the asset ID
