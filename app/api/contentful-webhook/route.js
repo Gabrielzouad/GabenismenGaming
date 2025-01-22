@@ -53,7 +53,8 @@ export async function POST(req) {
     console.log('Blog URL:', blogUrl);
 
     // Example: Sending a request to a Discord webhook (from the `content` value)
-    const webhookUrl = content;
+    const webhookUrl =
+      'https://discord.com/api/webhooks/1331646610110681139/it1yRw0QOrUElx3rDoBrx-a0Vw6FDNl38Oxnw1Ewk23y8nl90oOvOymFfmRbEI0ddXWi';
     if (
       webhookUrl &&
       webhookUrl.startsWith('https://discord.com/api/webhooks')
