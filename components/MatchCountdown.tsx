@@ -105,7 +105,9 @@ const MatchCountdown = () => {
             </div>
           </div>
         ) : (
-          <p>No upcoming matches found.</p>
+          <div className='flex justify-center items-center h-full w-full py-4'>
+            <p>No upcoming matches found.</p>
+          </div>
         )}
 
         {/* Display the next two matches */}
