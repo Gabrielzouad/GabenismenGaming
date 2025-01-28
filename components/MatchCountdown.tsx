@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader } from './ui/card';
 import { fetchTeamMatches } from '../app/api/gamerapi';
 import type { Match } from '../types/types';
 import { calculateTimeLeft } from '../lib/utils'; // Ensure this utility is properly defined
-import Image from 'next/image';
 
 const MatchCountdown = () => {
   const [timeLeft, setTimeLeft] = useState<{

@@ -19,6 +19,7 @@ export async function fetchTeamMatches() {
     }
 
     const data = await res.json();
+
     // Check if data has a `data` property and return it
     if (data && Array.isArray(data.data)) {
       return data.data;

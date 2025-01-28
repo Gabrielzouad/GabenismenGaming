@@ -6,7 +6,7 @@ const nextConfig = {
       {
         source: '/api/matches', // Internal endpoint you will use
         destination:
-          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=12465&team_id=176129', // External API endpoint
+          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=13163&team_id=176129', // External API endpoint
       },
     ];
   },
