@@ -36,3 +36,15 @@ export const calculateTimeLeft = (matches: Match[]): { days: string; hours: stri
     seconds: formatToTwoDigits(seconds),
   };
 };
+
+export function formatDate(dateString: string) {
+  const date = new Date(dateString)
+  return new Intl.DateTimeFormat("no-NO", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(date)
+}
+

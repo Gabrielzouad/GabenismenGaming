@@ -69,10 +69,11 @@
 
 .glassmorphism-card {
   position: relative;
-  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
-  border-radius: 10px; /* Optional: rounded corners */
+  overflow: hidden;
+  border-radius: 10px;
   border-width: 0;
-  background: transparent; /* Ensure the card’s background is transparent */
+  background: transparent;
+  z-index: 1;  /* Add a z-index to the parent container */
 }
 
 .glassmorphism-card::before {
@@ -82,8 +83,10 @@
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fallback color */
   background: url('/gabenismen.png') no-repeat center center;
   background-size: cover;
-  filter: blur(64px); /* Apply the blur effect */
-  z-index: -1; /* Place the pseudo-element behind the card content */
+  filter: blur(64px);
+  z-index: -1;  /* Ensure it's behind the content */
 }
+

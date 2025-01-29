@@ -66,3 +66,46 @@ export interface TeamLogo {
     videos: any[]; // Adjust if you have more details about videos
   }
   
+
+  export interface TeamData {
+    name: string
+    players: PlayerOverview[]
+  }
+  
+  export interface PlayerOverview {
+    id: string
+    name: string
+    role: string
+    totalKills: number
+    totalDeaths: number
+    totalAssists: number
+    totalWins: number
+    totalLosses: number
+    avatarUrl: string
+  }
+  
+  export interface PlayerDetails {
+    id: string
+    name: string
+    role: string
+    avatarUrl: string
+    totalKills: number
+    totalDeaths: number
+    totalAssists: number
+    totalWins: number
+    totalLosses: number
+    championStats: ChampionStat[]
+  }
+  
+  export interface ChampionStat {
+    championId: number
+    championName: string
+    championImage: string
+    gamesPlayed: number
+    wins: number
+    kills: number
+    deaths: number
+    assists: number
+  }
+  
+  

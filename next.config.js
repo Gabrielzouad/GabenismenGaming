@@ -1,17 +1,29 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/matches', // Internal endpoint you will use
+        source: '/api/matches',
         destination:
-          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=13163&team_id=176129', // External API endpoint
+          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=13163&team_id=176129',
+      },
+      {
+        source: '/api/team',
+        destination: 'https://www.gamer.no/api/paradise/v2/team/176129/players', // Adjust this URL to the correct endpoint for team data
+      },
+
+      {
+        source: '/api/matchup/:id/stats',
+        destination: 'https://www.gamer.no/api/paradise/v2/matchup/:id/stats',
       },
     ];
   },
   images: {
-    remotePatterns: [{ hostname: 'images.ctfassets.net', protocol: 'https' }], // Add your image domains here
+    remotePatterns: [
+      { hostname: 'images.ctfassets.net', protocol: 'https' },
+      { hostname: 'i.bo3.no', protocol: 'https' }, // Add this line to allow images from the Gamer API
+      { hostname: 'ddragon.leagueoflegends.com', protocol: 'https' }, // Add this line to allow images from the Riot API
+    ],
   },
 };
 
