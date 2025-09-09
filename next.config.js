@@ -5,7 +5,7 @@ const nextConfig = {
       {
         source: '/api/matches',
         destination:
-          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=13163&team_id=176129',
+          'https://www.gamer.no/api/paradise/v2/matchup?competition_id=13599&team_id=162570',
       },
       {
         source: '/api/team',
