@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         source: '/api/team',
-        destination: 'https://www.gamer.no/api/paradise/v2/team/176129/players', // Adjust this URL to the correct endpoint for team data
+        destination: 'https://www.gamer.no/api/paradise/v2/team/162570/players', // Adjust this URL to the correct endpoint for team data
       },
 
       {

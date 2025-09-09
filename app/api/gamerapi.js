@@ -46,16 +46,20 @@ export async function fetchTeamMatches() {
   });
   return data.data || [];
 }
-
 export async function fetchMatchStats(matchId) {
-  const url = `/api/matchup/${matchId}/stats`;
-  return fetchWithCache(url, {
+  const url = `https://www.gamer.no/api/paradise/v2/matchup/${encodeURIComponent(
+    matchId
+  )}/stats`;
+  const res = await fetch(url, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${TOKEN}`,
       Accept: 'application/json',
     },
+    cache: 'no-store', // disable caching to ensure freshness
   });
+  if (!res.ok) throw new Error(`Stats fetch failed: ${res.status}`);
+  return res.json();
 }
 
 export async function fetchPlayerStats(playerIds) {
